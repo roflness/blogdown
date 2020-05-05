@@ -1,3 +1,15 @@
+<?php
+
+$anniversary = strtotime("2015-10-02");
+$now = time();
+$datediff = $now - $anniversary;
+$daysRemaining = floor($datediff/(60*60*24));
+$years = round($daysRemaining / 365, 2);
+// echo $years;
+$hello = "world";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,10 +60,8 @@ http://www.templatemo.com/tm-467-easy-profile
 				<h2>Photo Resume</h2>				
 				<p>Take a look at some of my most recent works <a href="photos.html">here</a>.</p>
 				<p>testing php code</p>
-				<?php  
-				include($sitePath . '/today.php') ;
-				echo $years;
-				?>	
+				<?php echo $hello; ?>
+				<?php echo $years; ?>
 
 
 			</div>
