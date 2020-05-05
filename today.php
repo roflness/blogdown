@@ -6,5 +6,6 @@ $datediff = $now - $anniversary;
 $daysRemaining = floor($datediff/(60*60*24));
 $years = round($daysRemaining / 365, 2);
 // echo $years;
+$hello = "world";
 
 ?>
